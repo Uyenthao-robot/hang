@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #fceabb, #f8b500);
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Centers the image vertically */
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            flex: 2; /* Allows content to take up more space */
+        }
+        .content fieldset {
+            border: 2px solid #f57c00;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .content legend {
+            font-weight: bold;
+            color: #f57c00;
+        }
+        .content label {
+            font-weight: bold;
+        }
+        .content p {
+            margin: 5px 0 15px;
+            color: #555;
+        }
+        .additional-box {
+            background: #ffe9b6;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .additional-box h2 {
+            color: #f57c00;
+            margin-bottom: 10px;
+        }
+        .image {
+            flex: 1; /* Image takes less space compared to content */
+            text-align: center; /* Centers the image horizontally */
+        }
+        .image img {
+            max-width: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #f57c00;">Giới thiệu bản thân</h1>
+    <div class="container">
+        <!-- Left Side: Content -->
+        <div class="content">
+            <!-- Main Information -->
+            <form action="bieumau.html" method="post">
+                <fieldset>
+                    <legend>Giới thiệu thông tin bản thân</legend>
+                    <ol> 
+                        <li>
+                            <label for="fullname">Họ và tên:</label>
+                            <br>
+                            <p>Trần Nguyệt Hằng</p>
+                        </li>
+                        <li>
+                            <label for="class">Lớp:</label>
+                            <br>
+                            <p>12 Hóa</p>
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <br>
+                            <p>nguyethang123@gmail.com</p>
+                        </li>
+                        <li>
+                            <label for="text">Quê quán:</label>
+                            <br>
+                            <p>Thành phố Bến Tre, tỉnh Bến Tre</p>
+                        </li>
+                    </ol>
+                </fieldset>
+            </form>
+
+            <!-- Additional Information Box -->
+            <div class="additional-box">
+                <h2>Thông tin thêm</h2>
+                <p><strong>Số điện thoại liên lạc:</strong> 0123 456 789</p>
+                <p><strong>Câu lạc bộ:</strong> CLB Hóa học sáng tạo</p>
+            </div>
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="image">
+            <img src="dora1.png" alt="Hình ảnh của Trần Nguyệt Hằng">
+        </div>
+    </div>
+</body>
+</html>

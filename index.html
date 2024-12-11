@@ -3,96 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu bản thân</title>
+    <title>Giới thiệu bản thân - Slay Version</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #fceabb, #f8b500);
-            color: #333;
+            padding: 0;
+            background: linear-gradient(120deg, #f093fb, #f5576c);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 30px 0;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
         }
         .container {
             display: flex;
             justify-content: space-between;
-            align-items: center; /* Centers the image vertically */
-            max-width: 1000px;
+            align-items: center;
+            max-width: 1100px;
             margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
         }
         .content {
-            flex: 2; /* Allows content to take up more space */
+            flex: 2;
         }
         .content fieldset {
-            border: 2px solid #f57c00;
-            border-radius: 8px;
-            padding: 15px;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: 20px;
             margin-bottom: 20px;
+            background: rgba(255, 255, 255, 0.2);
         }
         .content legend {
-            font-weight: bold;
-            color: #f57c00;
-        }
-        .content label {
-            font-weight: bold;
+            font-size: 1.5rem;
+            color: #ff9a9e;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
         }
         .content p {
-            margin: 5px 0 15px;
-            color: #555;
+            font-size: 1.1rem;
+            margin: 5px 0;
+            color: #ffe4e9;
         }
         .additional-box {
-            background: #ffe9b6;
-            padding: 15px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
         }
         .additional-box h2 {
-            color: #f57c00;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ff9a9e;
+        }
+        .additional-box p {
+            font-size: 1.1rem;
             margin-bottom: 10px;
         }
         .image {
-            flex: 1; /* Image takes less space compared to content */
-            text-align: center; /* Centers the image horizontally */
+            flex: 1;
+            text-align: center;
         }
         .image img {
-            max-width: 150px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 180px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .image img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: linear-gradient(120deg, #ff6a88, #ff99ac);
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .button:hover {
+            background: linear-gradient(120deg, #ff99ac, #ff6a88);
+            box-shadow: 0 5px 15px rgba(255, 106, 136, 0.6);
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center; color: #f57c00;">Giới thiệu bản thân</h1>
+    <h1>Giới thiệu bản thân</h1>
     <div class="container">
         <!-- Left Side: Content -->
         <div class="content">
             <!-- Main Information -->
             <form action="bieumau.html" method="post">
                 <fieldset>
-                    <legend>Giới thiệu thông tin bản thân</legend>
-                    <ol> 
+                    <legend>Thông tin cơ bản</legend>
+                    <ol>
                         <li>
-                            <label for="fullname">Họ và tên:</label>
-                            <br>
-                            <p>Trần Nguyệt Hằng</p>
+                            <p><strong>Họ và tên:</strong> Trần Nguyệt Hằng</p>
                         </li>
                         <li>
-                            <label for="class">Lớp:</label>
-                            <br>
-                            <p>12 Hóa</p>
+                            <p><strong>Lớp:</strong> 12 Hóa</p>
                         </li>
                         <li>
-                            <label for="email">Email:</label>
-                            <br>
-                            <p>nguyethang123@gmail.com</p>
+                            <p><strong>Email:</strong> nguyethang123@gmail.com</p>
                         </li>
                         <li>
-                            <label for="text">Quê quán:</label>
-                            <br>
-                            <p>Thành phố Bến Tre, tỉnh Bến Tre</p>
+                            <p><strong>Quê quán:</strong> Thành phố Bến Tre, tỉnh Bến Tre</p>
                         </li>
                     </ol>
                 </fieldset>
@@ -101,7 +132,7 @@
             <!-- Additional Information Box -->
             <div class="additional-box">
                 <h2>Thông tin thêm</h2>
-                <p><strong>Số điện thoại liên lạc:</strong> 0123 456 789</p>
+                <p><strong>Số điện thoại:</strong> 0123 456 789</p>
                 <p><strong>Câu lạc bộ:</strong> CLB Hóa học sáng tạo</p>
             </div>
         </div>
@@ -110,6 +141,10 @@
         <div class="image">
             <img src="https://github.com/user-attachments/assets/1f440ed9-1652-4c56-a1a4-0d449d84d7dd" alt="Hình ảnh của Trần Nguyệt Hằng">
         </div>
+    </div>
+
+    <div class="button-container">
+        <a href="https://yeuphim.cc/phim/hon-ma-theo-duoi" target="_blank" class="button">Xem phim yêu thích</a>
     </div>
 </body>
 </html>

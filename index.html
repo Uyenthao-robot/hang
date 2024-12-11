@@ -3,68 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu bản thân - Slay Version</title>
+    <title>Giới thiệu bản thân</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background: linear-gradient(120deg, #f093fb, #f5576c);
-            color: #fff;
-            overflow-x: hidden;
-        }
-        h1 {
-            text-align: center;
-            font-size: 3rem;
-            margin: 30px 0;
-            color: #fff;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            color: #333;
         }
         .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-            backdrop-filter: blur(10px);
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         .content {
             flex: 2;
         }
         .content fieldset {
-            border: 2px solid #fff;
-            border-radius: 10px;
-            padding: 20px;
+            border: 2px solid #ff6f61;
+            border-radius: 8px;
+            padding: 15px;
             margin-bottom: 20px;
-            background: rgba(255, 255, 255, 0.2);
         }
         .content legend {
-            font-size: 1.5rem;
-            color: #ff9a9e;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            font-weight: bold;
+            color: #ff6f61;
+        }
+        .content label {
+            font-weight: bold;
         }
         .content p {
-            font-size: 1.1rem;
-            margin: 5px 0;
-            color: #ffe4e9;
+            margin: 5px 0 15px;
+            color: #555;
+            font-size: 1.2rem;
         }
         .additional-box {
-            background: rgba(0, 0, 0, 0.4);
-            padding: 20px;
+            background: #ffe0cc;
+            padding: 15px;
             border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .additional-box h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #ff9a9e;
-        }
-        .additional-box p {
-            font-size: 1.1rem;
+            color: #ff6f61;
             margin-bottom: 10px;
         }
         .image {
@@ -72,79 +59,42 @@
             text-align: center;
         }
         .image img {
-            max-width: 180px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .image img:hover {
-            transform: scale(1.1);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9);
-        }
-        .button-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            color: #fff;
-            background: linear-gradient(120deg, #ff6a88, #ff99ac);
-            border: none;
-            border-radius: 50px;
-            text-decoration: none;
+        .blinking-text {
+            font-size: 2rem;
             font-weight: bold;
-            transition: background 0.3s, box-shadow 0.3s;
+            color: #ff6f61;
+            animation: blink 1s step-start infinite;
         }
-        .button:hover {
-            background: linear-gradient(120deg, #ff99ac, #ff6a88);
-            box-shadow: 0 5px 15px rgba(255, 106, 136, 0.6);
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Giới thiệu bản thân</h1>
+    <h1 style="text-align: center; color: #ff6f61; font-size: 3rem;">Giới thiệu bản thân</h1>
     <div class="container">
         <!-- Left Side: Content -->
         <div class="content">
             <!-- Main Information -->
             <form action="bieumau.html" method="post">
                 <fieldset>
-                    <legend>Thông tin cơ bản</legend>
+                    <legend>Giới thiệu thông tin bản thân</legend>
                     <ol>
                         <li>
-                            <p><strong>Họ và tên:</strong> Trần Nguyệt Hằng</p>
+                            <label for="fullname">Họ và tên:</label>
+                            <br>
+                            <p>Trần Nguyệt Hằng</p>
                         </li>
                         <li>
-                            <p><strong>Lớp:</strong> 12 Hóa</p>
+                            <label for="class">Lớp:</label>
+                            <br>
+                            <p>12 Hóa</p>
                         </li>
                         <li>
-                            <p><strong>Email:</strong> nguyethang123@gmail.com</p>
-                        </li>
-                        <li>
-                            <p><strong>Quê quán:</strong> Thành phố Bến Tre, tỉnh Bến Tre</p>
-                        </li>
-                    </ol>
-                </fieldset>
-            </form>
-
-            <!-- Additional Information Box -->
-            <div class="additional-box">
-                <h2>Thông tin thêm</h2>
-                <p><strong>Số điện thoại:</strong> 0123 456 789</p>
-                <p><strong>Câu lạc bộ:</strong> CLB Hóa học sáng tạo</p>
-            </div>
-        </div>
-
-        <!-- Right Side: Image -->
-        <div class="image">
-            <img src="https://github.com/user-attachments/assets/1f440ed9-1652-4c56-a1a4-0d449d84d7dd" alt="Hình ảnh của Trần Nguyệt Hằng">
-        </div>
-    </div>
-
-    <div class="button-container">
-        <a href="https://yeuphim.cc/phim/hon-ma-theo-duoi" target="_blank" class="button">Xem phim yêu thích</a>
-    </div>
-</body>
-</html>
+                            <label fo
